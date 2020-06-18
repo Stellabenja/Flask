@@ -8,19 +8,25 @@ app = Flask(__name__)
 def index():
  return render_template('base.html')
 
+
+
 @app.route('/home', methods=['GET', 'POST'])
 def home_form():
     if request.method == 'POST':
-        # do stuff when the form is submitted
-
-        # redirect to end the POST handling
-        # the redirect can be to the same route or somewhere else
+       
         return redirect(url_for('base'))
 
-    # show the form, it wasn't submitted
+    
     return render_template('home.html') 
 
+@app.route('/login', methods=['GET', 'POST'])
+def login_form():
+    if request.method == 'POST':
+        
+        return redirect(url_for('base'))
 
+    
+    return render_template('login.html') 
 
 
 #run    
