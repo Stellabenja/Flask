@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+</head>
+<body>
+<h1>Register</h1>
+<form action="http://127.0.0.1:5000/signup" method = "post">
+
+	<!--Task 1.2 start-->
+     <p>
+        {{form.firstname.label}}<br>
+        {{form.firstname(size=30)}}
+    </p>
+ <p>
+        {{form.lastname.label}}<br>
+        {{form.lastname(size=30)}}
+    </p>
+    <p>
+        {{form.birthdate.label}}<br>
+        {{form.birthdate}}
+    </p>
+ <p>
+        {{form.email.label}}<br>
+        {{form.email(size=30)}}
+    </p>
+    <p>
+        {{form.password.label}}<br>
+        {{form.password}}
+    </p>
+ <p>
+        {{form.confirm.label}}<br>
+        {{form.confirm}}
+    </p>
+    <p>
+        <br>
+        {{form.submit()}}
+    </p>
+
+	<!--Task 1.2 end-->
+
+
+</form>
+<link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+	<link href="fontawesome/css/all.css" rel="stylesheet">
+	<script src="bootstrap-4.4.1-dist/jquery-3.4.1.min.js "></script>
+    <script src="bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js "></script>
+</body>
+</html>
