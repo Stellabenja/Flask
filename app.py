@@ -37,7 +37,7 @@ def signup():
              password=request.form.get('password')
              confirmPassword=request.form.get('confirm')
              if len(password) >=6 :
-                 if  password is not confirmPassword:
+                 if password is not confirmPassword:
                       user = User(
                        firstname=request.form.get("firstname"),
                        lastname=request.form.get("lastname"),
